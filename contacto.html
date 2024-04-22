@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="image/png" href="Imagenes/afd28afdffc4e5b08ed52d0eb025c576-elemento-de-abeja.png" />
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+    <hearder>
+        <h1>Contactanos</h1>
+        <nav>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="dieta.html">Dieta</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#pie_pagina">Pie de Pagina</a></li>
+            </ul>
+        </nav>
+    </hearder>
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <div>
+                    <label for="name">Nombre</label><br />
+                    <input type="text" name="nombre" id="name" placeholder="Nombre..." required minlength="5"
+                        maxlength="18" pattern="[A-Za-z]+" />
+                </div>
+                <div>
+                    <label for="lastname">Apellido</label><br />
+                    <input type="text" name="apellido" id="lastname" placeholder="Apellido..." required minlength="5"
+                        maxlength="18" pattern="[A-Za-z]+" />
+                </div>
+                <div>
+                    <label for="email">Email</label><br />
+                    <input type="email" id="email" />
+                </div>
+                <div>
+                    <label for="age">Edad</label><br />
+                    <input type="number" id="age" maxlength="3" />
+                </div>
+                <div>
+                    <label for="gender">Genero</label><br />
+                    <select id="gender">
+                        <option value="man">Masculino</option>
+                        <option value="women">Femenino</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="motivo">Motivo de Contacto</label><br />
+                    <textarea id="motivo" maxlength="200" placeholder="Cuentanos el motivo..."></textarea>
+                </div>
+                <br />
+                <input type="submit" value="Send" />
+            </form>
+        </section>
+    </main>
+    <hr />
+    <footer id="pie_pagina">
+        Agradecimientos a mi por hacer esta pagina tan linda Valentin Velluti &copy;2024
+        <p>
+            <a href="#top" class="button-link">Volver Arriba</a>
+        </p>
+    </footer>
+</body>
+
+</html>
