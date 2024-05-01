@@ -5,90 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dieta</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://vscode.dev/github/ValentinVelluti/ProyectHTML/blob/main/Bootstrap/css"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="Imagenes/afd28afdffc4e5b08ed52d0eb025c576-elemento-de-abeja.png" />
+    <!-- Enlace a tu archivo CSS personalizado -->
     <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
-    <hearder>
-        <h1>Dieta de las Abejas</h1>
-        <nav>
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="multimedia.html">Multimedia</a></li>
-                <li><a href="dieta.html">Dieta</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </nav>
-    </hearder>
+    <header>
+        <div class="container">
+            <h1>Dieta de las Abejas</h1>
+            <nav>
+                <h2>Menu</h2>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dieta.html">Dieta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
-        <section id="dieta">
-            <table border="3">
-                <tr>
-                    <th>Casta</th>
-                    <th>Huevo </th>
-                    <th>Larva </th>
-                    <th>Pupa </th>
-                    <th>Adulto </th>
-                </tr>
-                <tr>
-                    <td>Obreras</td>
-                    <td>-</td>
-                    <td>Polen</td>
-                    <td>-</td>
-                    <td>Miel y Polen</td>
-                </tr>
-                <tr>
-                    <td>Zanganos</td>
-                    <td>-</td>
-                    <td>Polen</td>
-                    <td>-</td>
-                    <td>Miel y Polen</td>
-                </tr>
-                <tr>
-                    <td>Reinas</td>
-                    <td>-</td>
-                    <td>Jalea Real</td>
-                    <td>-</td>
-                    <td>Jalea Real</td>
-                </tr>
-            </table>
-            <hr />
-            <table border="5">
-                <tr>
-                    <td><img src="https://www.nicaraguadisena.com/wp-content/uploads/2021/05/1549538608_151758_1549538749_noticia_normal.jpg"
-                            width="200" alt="Descarga mas Ram" /></td>
-                    <td><img src="https://fotografias.larazon.es/clipping/cmsimages02/2022/09/18/0E0C9B82-D4BC-43C5-AE88-C58BF7D07592/98.jpg?crop=1299,731,x0,y67&width=1900&height=1069&optimize=low&format=webply"
-                            width="250" alt="Descarga mas Ram" /></td>
-                    <td><img src="https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/R3V6TMTQ3FLBHGJC23OTFNU7W4.jpg"
-                            width="200" alt="Descarga mas Ram" /></td>
-                    <td><img src="https://static.nationalgeographic.es/files/styles/image_3200/public/10357.600x450.jpg?w=1900&h=1425"
-                            width="200" alt="Descarga mas Ram" /></td>
-                </tr>
-                <tr>
-                    <th>Nectar</th>
-                    <th>Polen</th>
-                    <th>Miel</th>
-                    <th>Jalea Real</th>
-                </tr>
-                <tr>
-                    <td>Absorben el nectar de las flores para digerirlo y regurgitarlo en la colmena. A partir de este
-                        alimento fabrican miel.</td>
-                    <td>Es la fuente de alimento rica en hidratos de carbono y proteinas, ademas de vitaminas del grupo
-                        B</td>
-                    <td>Aporta a las abejas aproximadamente el 80% de los azucares que necesitan. Es el alimento de los
-                        zanganos y las obreras jovenes y adultas.</td>
-                    <td>Es alimento de las obreras durante sus primeros dias de vida y lo unico que come la abeja reina.
-                        Las obreras, despues pasan a comer nectar, polen y miel.</td>
-                </tr>
-            </table>
+        <section id="dieta" class="container">
+            <div class="row">
+                <div class="col">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Casta</th>
+                                <th scope="col">Huevo</th>
+                                <th scope="col">Larva</th>
+                                <th scope="col">Pupa</th>
+                                <th scope="col">Adulto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Obreras</td>
+                                <td>-</td>
+                                <td>Polen</td>
+                                <td>-</td>
+                                <td>Miel y Polen</td>
+                            </tr>
+                            <tr>
+                                <td>Zánganos</td>
+                                <td>-</td>
+                                <td>Polen</td>
+                                <td>-</td>
+                                <td>Miel y Polen</td>
+                            </tr>
+                            <tr>
+                                <td>Reinas</td>
+                                <td>-</td>
+                                <td>Jalea Real</td>
+                                <td>-</td>
+                                <td>Jalea Real</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Néctar</th>
+                                <th scope="col">Polen</th>
+                                <th scope="col">Miel</th>
+                                <th scope="col">Jalea Real</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Absorben el néctar de las flores para digerirlo y regurgitarlo en la colmena. A
+                                    partir de este alimento fabrican miel.
+                                </td>
+                                <td>
+                                    Es la fuente de alimento rica en hidratos de carbono y proteínas, además de
+                                    vitaminas del grupo B.
+                                </td>
+                                <td>
+                                    Aporta a las abejas aproximadamente el 80% de los azúcares que necesitan. Es el
+                                    alimento de los zánganos y las obreras jóvenes y adultas.
+                                </td>
+                                <td>
+                                    Es alimento de las obreras durante sus primeros días de vida y lo único que come
+                                    la abeja reina. Las obreras, después pasan a comer néctar, polen y miel.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         </section>
     </main>
     <hr />
-    <footer id="pie_pagina">
-        Agradecimientos a mi por hacer esta pagina tan linda Valentin Velluti &copy;2024
+    <footer id="pie_pagina" class="container">
+        Agradecimientos a mi por hacer esta página tan linda Valentin Velluti &copy;2024
         <p>
             <a href="#top" class="button-link">Volver Arriba</a>
         </p>
