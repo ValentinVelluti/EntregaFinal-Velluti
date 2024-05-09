@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   background-image: url('Imagenes/5397533.jpg');
@@ -7,11 +6,10 @@ body {
   color: #333;
 }
 
-/* Estilos para botones */
 .button {
   display: inline-block;
   background-color: #f7e923;
-  color: #000;
+  color: #333;
   padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
@@ -24,7 +22,6 @@ body {
   background-color: #f7cf23;
 }
 
-/* Agregando fondo y contorno */
 .button.with-background {
   background-color: #fff;
 }
@@ -33,53 +30,42 @@ body {
   border-color: #f7e923;
 }
 
-/* Estilos para secciones */
 section {
   margin: 20px;
 }
 
-/* Estilos para imágenes dentro de los artículos */
 article img {
   max-width: 100%;
   height: auto;
   float: right;
-  /* Alinea las imágenes a la derecha */
   margin-left: 20px;
-  /* Agrega un margen a la izquierda para separarlas del texto */
 }
 
-/* Estilos para imágenes específicas */
 img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"] {
   max-width: 100%;
   height: auto;
   float: right;
-  /* Alinea la imagen a la derecha */
   margin-left: 20px;
-  /* Agrega un margen a la izquierda para separarla del texto */
 }
 
-/* Clearfix para evitar que el contenido se superponga a la imagen específica */
 img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"]::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Estilos para el contenido de los artículos */
 article p,
 article h2,
 article time {
   margin-bottom: 10px;
 }
 
-/* Clearfix para evitar que el contenido se superponga a las imágenes */
 .article::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Estilos para encabezado */
 header {
   text-align: center;
   padding: 20px 0;
@@ -89,7 +75,6 @@ header h1 {
   margin: 0;
 }
 
-/* Estilos para el menú de navegación */
 nav {
   text-align: center;
 }
@@ -107,16 +92,6 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #333;
-}
-
-nav ul li a:hover {
-  color: #f7b623;
-}
-
-/* Estilos para los enlaces del menú */
-nav ul li a {
-  text-decoration: none;
-  color: #333;
   padding: 10px 20px;
   border-radius: 20px;
   background-color: #f7e923;
@@ -124,13 +99,11 @@ nav ul li a {
   transition: background-color 0.3s ease;
 }
 
-/* Estilos para el hover */
 nav ul li a:hover {
   background-color: #f7cf23;
-  color: #000;
+  color: #333;
 }
 
-/* Estilos para tablas */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -143,7 +116,6 @@ table td {
   border-bottom: 1px solid #000;
 }
 
-/* Estilos para formularios */
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -174,7 +146,7 @@ form input[type="submit"] {
   width: 100%;
   padding: 10px;
   background-color: #f7e923;
-  color: #000;
+  color: #333;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -184,7 +156,6 @@ form input[type="submit"]:hover {
   background-color: #f7cf23;
 }
 
-/* Estilos para el pie de página */
 footer {
   text-align: center;
   padding: 20px 0;
@@ -195,23 +166,17 @@ footer a {
   color: #333;
 }
 
-/* Estilos para el enlace dentro del párrafo */
 p a.button-link {
   display: inline-block;
   padding: 10px 20px;
   background-color: #f7e923;
-  color: #000;
+  color: #333;
   border-radius: 20px;
   text-decoration: none;
   border: 2px solid #000;
   transition: background-color 0.3s ease;
 }
 
-/* Estilos para el hover del enlace dentro del párrafo */
 p a.button-link:hover {
   background-color: #f7cf23;
-}
-
-footer a:hover {
-  color: #f7b623;
 }
