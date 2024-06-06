@@ -1,33 +1,18 @@
+/* Definiendo variables */
+:root {
+  --color-primary: #f7e923;
+  --color-secondary: #f7cf23;
+  --color-text: #6B4A1C; /* Marrón para contraste con el fondo amarillo claro */
+  --color-border: #000;
+}
+
+/* Definiendo estilos generales */
 body {
   font-family: Arial, sans-serif;
   background-image: url('Imagenes/5397533.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  color: #333;
-}
-
-.button {
-  display: inline-block;
-  background-color: #f7e923;
-  color: #333;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-decoration: none;
-  margin: 10px;
-  border: 2px solid #000;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #f7cf23;
-}
-
-.button.with-background {
-  background-color: #fff;
-}
-
-.button.with-outline {
-  border-color: #f7e923;
+  color: var(--color-text); /* Cambiando el color del texto a marrón */
 }
 
 section {
@@ -41,6 +26,7 @@ article img {
   margin-left: 20px;
 }
 
+/* Estilos para imágenes específicas */
 img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"] {
   max-width: 100%;
   height: auto;
@@ -60,6 +46,7 @@ article time {
   margin-bottom: 10px;
 }
 
+/* Clearfix para evitar que el contenido se superponga a las imágenes */
 .article::after {
   content: "";
   display: table;
@@ -75,6 +62,32 @@ header h1 {
   margin: 0;
 }
 
+/* Definiendo estilos de botones */
+.button,
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 2px solid var(--color-border);
+  transition: background-color 0.3s ease;
+}
+
+.button.with-background,
+.button-link.with-background {
+  background-color: #fff;
+}
+
+.button.with-outline {
+  border-color: var(--color-primary);
+}
+
+.button:hover,
+.button-link:hover {
+  background-color: var(--color-secondary);
+}
+
+/* Definiendo estilos de navegación */
 nav {
   text-align: center;
 }
@@ -91,19 +104,14 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-color: #f7e923;
-  border: 2px solid #000;
-  transition: background-color 0.3s ease;
+  color: var(--color-text);
 }
 
 nav ul li a:hover {
-  background-color: #f7cf23;
-  color: #333;
+  color: var(--color-secondary);
 }
 
+/* Definiendo estilos de tablas */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -113,9 +121,10 @@ table th,
 table td {
   padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--color-border);
 }
 
+/* Definiendo estilos de formularios */
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -145,17 +154,18 @@ form select {
 form input[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: #f7e923;
-  color: #333;
+  background-color: var(--color-primary);
+  color: var(--color-text);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-  background-color: #f7cf23;
+  background-color: var(--color-secondary);
 }
 
+/* Definiendo estilos del pie de página */
 footer {
   text-align: center;
   padding: 20px 0;
@@ -163,20 +173,22 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #333;
+  color: var(--color-text);
 }
 
+/* Estilos para el enlace dentro del párrafo */
 p a.button-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #f7e923;
-  color: #333;
+  background-color: var(--color-primary);
+  color: var(--color-text);
   border-radius: 20px;
   text-decoration: none;
-  border: 2px solid #000;
+  border: 2px solid var(--color-border);
   transition: background-color 0.3s ease;
 }
 
+/* Estilos para el hover del enlace dentro del párrafo */
 p a.button-link:hover {
-  background-color: #f7cf23;
+  background-color: var(--color-secondary);
 }
