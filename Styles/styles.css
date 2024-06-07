@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #E38B28;
-  background-image: url('Imagenes/5397533.jpg');
+  background-image: url('../Imagenes/5397533.jpg'); /* Adjusted the path */
   background-size: cover;
   background-repeat: no-repeat;
   color: #333;
@@ -41,14 +41,14 @@ article img {
 }
 
 /* Estilos para las imágenes específicas */
-article img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"] {
+img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"] {
   max-width: 100%;
   height: auto;
   float: right;
   margin-left: 20px;
 }
 
-article img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"]::after {
+img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"]::after {
   content: "";
   display: table;
   clear: both;
