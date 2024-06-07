@@ -1,9 +1,6 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #E38B28;
-  background-image: url('../Imagenes/5397533.jpg'); /* Adjusted the path */
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #333;
 }
 
@@ -85,7 +82,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline; /* Cambiado de inline-block a inline */
+  display: inline;
   margin-right: 20px;
 }
 
