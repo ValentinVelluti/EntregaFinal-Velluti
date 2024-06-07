@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto </title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://vscode.dev/github/ValentinVelluti/ProyectHTML/blob/main/Bootstrap/css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Imagenes/afd28afdffc4e5b08ed52d0eb025c576-elemento-de-abeja.png" />
+    <!-- Enlace a tu archivo CSS personalizado -->
+    <link rel="stylesheet" type="text/css" href="C:\Users\valen\OneDrive\Documentos\GitHub\EntregaFinal_Velluti\Styles\styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Contactanos</h1>
+            <nav>
+                <h2>Menú</h2>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="C:\Users\valen\OneDrive\Documentos\GitHub\EntregaFinal_Velluti\codehtml\multimedia.html">Multimedia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="C:\Users\valen\OneDrive\Documentos\GitHub\EntregaFinal_Velluti\codehtml\dieta.html">Dieta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="C:\Users\valen\OneDrive\Documentos\GitHub\EntregaFinal_Velluti\codehtml\contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="C:\Users\valen\OneDrive\Documentos\GitHub\EntregaFinal_Velluti\codehtml\faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contacto" class="container">
+            <h2>Contacto</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nombre..." required minlength="5"
+                        maxlength="18" pattern="[A-Za-z]+" />
+                </div>
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Apellido..." required
+                        minlength="5" maxlength="18" pattern="[A-Za-z]+" />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Edad</label>
+                    <input type="number" class="form-control" id="age" maxlength="3" />
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Género</label>
+                    <select class="form-select" id="gender">
+                        <option value="man">Masculino</option>
+                        <option value="women">Femenino</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="motivo" class="form-label">Motivo de Contacto</label>
+                    <textarea class="form-control" id="motivo" maxlength="200"
+                        placeholder="Cuéntanos el motivo..."></textarea>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <hr />
+    <footer id="pie_pagina" class="container">
+        Agradecimientos a mi por hacer esta página tan linda Valentin Velluti &copy;2024
+        <p>
+            <a href="#top" class="button-link">Volver Arriba</a>
+        </p>
+    </footer>
+</body>
+
+</html>

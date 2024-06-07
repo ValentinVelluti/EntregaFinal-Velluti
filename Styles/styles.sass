@@ -1,0 +1,150 @@
+$body-font: Arial, sans-serif
+$background-image: url('Imagenes/5397533.jpg')
+$primary-color: #333
+$button-background: #f7e923
+$button-hover-background: #f7cf23
+$border-color: #000
+
+body
+  font-family: $body-font
+  background-image: $background-image
+  background-size: cover
+  background-repeat: no-repeat
+  color: $primary-color
+
+.menu-button
+  display: block
+  margin-bottom: 10px
+
+.button
+  display: inline-block
+  background-color: $button-background
+  color: $primary-color
+  padding: 10px 20px
+  border-radius: 20px
+  text-decoration: none
+  margin: 10px
+  border: 2px solid $border-color
+  transition: background-color 0.3s ease
+  cursor: pointer
+  &:hover
+    background-color: $button-hover-background
+
+section
+  margin: 20px
+
+article img
+  max-width: 100%
+  height: auto
+  float: right
+  margin-left: 20px
+
+img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"]
+  max-width: 100%
+  height: auto
+  float: right
+  margin-left: 20px
+  &::after
+    content: ""
+    display: table
+    clear: both
+
+article p, article h2, article time
+  margin-bottom: 10px
+
+.article::after
+  content: ""
+  display: table
+  clear: both
+
+header
+  text-align: center
+  padding: 20px 0
+
+header h1
+  margin: 0
+
+nav
+  text-align: center
+
+nav ul
+  list-style-type: none
+  padding: 0
+
+nav ul li
+  display: inline
+  margin-right: 20px
+
+nav ul li a
+  text-decoration: none
+  color: $primary-color
+  padding: 10px 20px
+  border-radius: 20px
+  background-color: $button-background
+  border: 2px solid $border-color
+  transition: background-color 0.3s ease
+  &:hover
+    background-color: $button-hover-background
+    color: $primary-color
+
+table
+  width: 100%
+  border-collapse: collapse
+
+table th, table td
+  padding: 8px
+  text-align: left
+  border-bottom: 1px solid $border-color
+
+form
+  max-width: 400px
+  margin: 0 auto
+
+form div
+  margin-bottom: 10px
+
+form label
+  display: block
+  margin-bottom: 5px
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea,
+form select
+  width: 100%
+  padding: 8px
+  box-sizing: border-box
+  border: 1px solid #ccc
+  border-radius: 5px
+
+form input[type="submit"]
+  width: 100%
+  padding: 10px
+  background-color: $button-background
+  color: $primary-color
+  border: none
+  border-radius: 5px
+  cursor: pointer
+  &:hover
+    background-color: $button-hover-background
+
+footer
+  text-align: center
+  padding: 20px 0
+
+footer a
+  text-decoration: none
+  color: $primary-color
+
+p a.button-link
+  display: inline-block
+  padding: 10px 20px
+  background-color: $button-background
+  color: $primary-color
+  border-radius: 20px
+  text-decoration: none
+  border: 2px solid $border-color
+  transition: background-color 0.3s ease
+  &:hover
+    background-color: $button-hover-background
