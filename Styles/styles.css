@@ -41,14 +41,14 @@ article img {
 }
 
 /* Estilos para las imágenes específicas */
-img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"] {
+article img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"] {
   max-width: 100%;
   height: auto;
   float: right;
   margin-left: 20px;
 }
 
-img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"]::after {
+article img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"]::after {
   content: "";
   display: table;
   clear: both;
